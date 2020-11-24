@@ -5,4 +5,4 @@
 [Student ID]  [Name]
 1771003       YANG JIAORONG
 1727014       Yoon Young Song
-1971048       Hyunsokk Ji
+1971048       Hyunsook Ji
