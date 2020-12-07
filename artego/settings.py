@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'artegoapp.apps.ArtegoappConfig',
     'accounts.apps.AccountsConfig',
 ]
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'artego.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['artego/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
