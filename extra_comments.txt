@@ -1,8 +1,0 @@
--------- Some Extra Comments ---------
-- skeleton code 작성
-- event handler 추가
-- ui design
-------------------------------------------
-- frontpage.html과 modal.html은 ui참고용
-- login.html, logout.html이외의 html파일은
-  eventhandler 추가 후 삭제 예정!
