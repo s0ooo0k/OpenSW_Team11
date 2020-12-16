@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ArtEgo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body{background-color: #DAD9D9;color: #365264;font-family: Arial;}
+    header{text-align:center;font-size:50px;font-family:Arial, bold;padding:20px;}
+    nav{padding:5px;overflow:hidden;text-align:right;}
+    nav a{font-size:15px;display:block;color:#365264;text-decoration:none;}
+    nav li{list-style:none;display:inline-block;padding:5px;}
+    h2{font-family: Arial; font-size: 36px;}
+    .wrapper{width: 1000px;margin: 20px auto;text-align: left;border:none;}
+
+    #review-container:: after{content: "";clear: both;display: table;}
+    .column{float:left; width:45%; height: 400px;margin: 10px; font-size: 20px;}
+    .column img{float: right; height: 100%;}
+
+    #info{padding: 10px;}
+    #ttl{font-weight:bold;font-size: 24px;}
+  </style>
+</head>
+<body>
+  <div class = "wrapper" id = "reviewPage">
+    <!--fixed UI until **---------------------------------------------->
+    <section id = "menu-container">
+        <nav>
+          <ul>
+            <li><a href = "login.html"><i class = "fa fa-fw fa-home"></i>HOME</a></li>
+            <li><a href = "event.html"><i class = "fa fa-fw fa-star"></i>EVENT</a></li>
+            <li><a href = "mycalendar.html"><i class = "fa fa-fw fa-calendar"></i>MY CALENDAR</a></li>
+            <li><a href = "logout.html"><i class = "fa fa-fw fa-user"></i>LOG OUT</a></li>
+          </ul>
+        </nav>
+        <!--Logo-->
+        <header>ArtEgo</header>
+      </section>
+      <!-- ** -------------------------------------------------------->
+      <!--title goes here-->
+      <section id = "review-container">
+        <div class = "column">
+          <img src = "http://kor.theasian.asia/wp-content/uploads/2020/11/200929_%EB%A7%88%ED%8B%B0%EC%8A%A4%ED%8F%AC%EC%8A%A4%ED%84%B0RGB-620x882.jpg">
+        </div>
+        <div class = "column">
+        <!--information on the exhibition-->
+          <div id = "info">
+            <label id = "ttl">앙리 마티스 탄생 150주년 기념 <마티스 특별전: 재즈와 연극></label>
+              <div id = "information">
+              <!--date-->
+              <p>2020. 10. 31 ~ 2021. 03. 03
+              <!--location-->
+              <p>마이아트뮤지엄(강남구 테헤란로 518 섬유센터빌딩 B1층)
+              <!--entrance fee-->
+              <p><i class = "fa fa-fw fa-won"></i>성인: 15000 청소년: 12000 어린이: 10000
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+</body>
+</html>
