@@ -15,7 +15,6 @@ class Information(models.Model):
     def __str__(self):
         return self.title
 
-
 class Comment(models.Model):
     post=models.ForeignKey(Information, related_name='comments', on_delete=models.CASCADE)
     author_name=models.CharField(max_length=20)
@@ -28,4 +27,3 @@ class Comment(models.Model):
     def __str__(self):
         return self.comment_text
 
-        
