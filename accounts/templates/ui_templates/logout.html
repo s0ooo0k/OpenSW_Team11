@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtEgo</title>
+    <style>
+    body{background-color: #DAD9D9;color: #365264;font-family: Arial;}
+    header{text-align:center;font-size:50px;font-family:Arial, bold;padding:20px;}
+    nav{padding:5px;overflow:hidden;text-align:right;}
+    nav a{font-size:15px;display:block;color:#365264;text-decoration:none;}
+    nav li{list-style:none;display:inline-block;padding:5px;}
+    .wrapper{width: 1000px;margin: 20px auto;text-align: left;border:none;}
+    .button{color: #365264;background-color:#DAD9D9;border:0;outline:0;cursor: pointer;}
+
+    /*intro-container*/
+    #enter-container{position:relative; margin:10px; text-align:center; }
+    #frontPage {text-align:center;}
+    #intro-container{position: relative;margin-left:20%; margin-right:20%;}
+
+    /*poster*/
+    .poster0{position: relative; width: 100%;}
+    .image0{position:relative; top: 0; left: 0; max-width:100%;}
+    .overlay0 {position: absolute; top: 0; bottom: 0; left: 0; right: 0;height: 100%; width: 100%;
+      opacity: 0; transition: .5s ease; background-color: rgba(194, 203, 208,0.5)}
+    .poster0:hover .overlay0 {opacity: 1;}
+    .text {color: white;font-size: 30px;position: absolute;top: 50%;left: 50%;text-decoration: none;
+      -webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);
+
+      .button{color: #365264;background-color:#DAD9D9;border:0;outline:0;cursor: pointer;}
+  </style>
 </head>
 <body>
-  <!--fixed UI until **---------------------------------------->
-  <section id = "logged-out-main-container">
-    <header><h1>ArtEgo</h1></header>
+  <div class = "wrapper" id = "frontPage">
+    <!--fixed UI until **---------------------------------------->
+    <section id = "logged-out-main-container">
+      <header>ArtEgo</header>
+    </section>
+    <!-- **----------------------------------------------->
+    <!--intro page-->
+      <h2>Exhibition of This Month</h2>
+    <section id ="intro-container" >
+        <div class = "poster0">
+          <!--poster-->
+          <img src = "http://kor.theasian.asia/wp-content/uploads/2020/11/200929_%EB%A7%88%ED%8B%B0%EC%8A%A4%ED%8F%AC%EC%8A%A4%ED%84%B0RGB-620x882.jpg"
+            class = "image0">
+          <div class="overlay0">
+            <a class="text" href = "review.html">Best of 2020<br>10th Dec, 2020<br>Seoul</a>
+          </div>
+        </div>
   </section>
-  <!-- **----------------------------------------------->
-  <!--intro page-->
-  <section id ="intro-container" >
-    <div class = "slide">
-      <!--link-->
-      <!--if user not logged in => log in page-->
-      <!--else => review page-->
-      <a href = "login.html">
-        <img src = "https://blogfiles.pstatic.net/MjAyMDExMjRfNTQg/MDAxNjA2MTQzNjc3Nzc0.H8m3ZJp6a_cRx-78coiiapGW4xNk89cldMj9w2tim6Qg.IW7otIHxe0P50WmtFxe2HIiky909cMbLqKmm3cDaal0g.JPEG.gseee0423/output_592749449.jpg" style = "width:300px">
-      </a>
-    </div>
-      <!--log in onclick=> log in page-->
-      <!-- join onclick=> join page-->
-      <form method = "get" action="signin.html">
-        <button name = "log_in" type = "submit">LOG IN</button>
-      </form>
-      <form method = "get" action="signup.html">
-        <button name = "join" type = "submit">JOIN</button>
-      </form>
+  <section id = "enter-container">
+      <button id = "logIn" class = "button" style = "font-size: 20px;">LOG IN</button>
+      <button id = "join" class = "button" style = "font-size: 20px;">JOIN</button>
   </section>
-  <!--sign in page-->
-  <section id = "log-in-container">
-    <!--signin.html comes here-->
-  </section>
-  <!--sign up page-->
-  <section id = "signup-container">
-    <!--signup.html comes here-->
-  </section>
+  </div>
+
+
 </body>
 </html>
